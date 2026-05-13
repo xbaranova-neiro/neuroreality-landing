@@ -180,6 +180,41 @@
       transform: scale(1.03);
     }
 
+    .cta-reg-short {
+      display: none;
+    }
+
+    @media (max-width: 767px) {
+      .cta-reg-full {
+        display: none;
+      }
+
+      .cta-reg-short {
+        display: inline;
+      }
+
+      body {
+        padding-top: 96px;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 10px 16px 12px;
+      }
+
+      .nav-logo {
+        max-width: 100%;
+        text-align: center;
+      }
+
+      .nav-cta {
+        align-self: center;
+      }
+    }
+
     .hero {
       min-height: calc(100vh - 56px);
       padding: 72px 24px 100px;
@@ -193,6 +228,12 @@
       background-image: radial-gradient(ellipse 120% 70% at 50% 0%, rgba(255, 255, 255, 0.65) 0%, transparent 55%),
         radial-gradient(ellipse 90% 50% at 50% 100%, rgba(251, 207, 232, 0.22) 0%, transparent 50%);
       overflow: visible;
+    }
+
+    @media (max-width: 767px) {
+      .hero {
+        min-height: calc(100vh - 96px);
+      }
     }
 
     .hero-deco-clip {
@@ -2254,7 +2295,7 @@
 <body>
   <nav id="site-nav">
     <div class="nav-logo">5 шагов заработка на&nbsp;ИИ</div>
-    <a href="#register" class="nav-cta">Зарегистрироваться бесплатно</a>
+    <a href="#register" class="nav-cta"><span class="cta-reg-full">Зарегистрироваться бесплатно</span><span class="cta-reg-short">Зарегистрироваться</span></a>
   </nav>
 
   <section class="hero" id="top" aria-label="Главный экран">
@@ -2306,7 +2347,7 @@
 
           <div class="hero-cta-block">
             <div class="hero-cta-row">
-              <a href="#register" class="hero-cta">Зарегистрироваться бесплатно</a>
+              <a href="#register" class="hero-cta"><span class="cta-reg-full">Зарегистрироваться бесплатно</span><span class="cta-reg-short">Зарегистрироваться</span></a>
               <a href="#channel-story" class="hero-cta-secondary">Подробнее про реалити</a>
             </div>
             <div class="cta-arrow" aria-hidden="true">↓</div>
@@ -2366,7 +2407,7 @@
         </article>
       </div>
       <div class="audience-cta-row">
-        <a href="#register" class="hero-cta">Зарегистрироваться бесплатно</a>
+        <a href="#register" class="hero-cta"><span class="cta-reg-full">Зарегистрироваться бесплатно</span><span class="cta-reg-short">Зарегистрироваться</span></a>
         <a href="#channel-story" class="hero-cta-secondary">Подробнее про реалити</a>
       </div>
     </div>
@@ -2420,7 +2461,7 @@
       </div>
     </div>
     <div class="hero-cta-row" style="margin-top: clamp(28px, 4.5vw, 44px)">
-      <a href="#register" class="hero-cta">Зарегистрироваться бесплатно</a>
+      <a href="#register" class="hero-cta"><span class="cta-reg-full">Зарегистрироваться бесплатно</span><span class="cta-reg-short">Зарегистрироваться</span></a>
       <a href="#channel-story" class="hero-cta-secondary">Подробнее про реалити</a>
     </div>
   </section>
@@ -2543,7 +2584,7 @@
       <p class="exit-intent-note">Закрытый канал с реалити&nbsp;— бесплатно.</p>
       <div class="exit-intent-actions">
         <button type="button" class="hero-cta" id="exit-intent-watch">Следить за реалити</button>
-        <button type="button" class="hero-cta" id="exit-intent-register">Зарегистрироваться бесплатно</button>
+        <button type="button" class="hero-cta" id="exit-intent-register"><span class="cta-reg-full">Зарегистрироваться бесплатно</span><span class="cta-reg-short">Зарегистрироваться</span></button>
         <button type="button" class="exit-intent-skip" data-exit-intent-close>Закрыть окно</button>
       </div>
     </div>
@@ -2627,7 +2668,7 @@
       </ol>
 
       <div class="hero-cta-row" style="margin-top: clamp(32px, 5vw, 52px)">
-        <a href="#register" class="hero-cta">Зарегистрироваться бесплатно</a>
+        <a href="#register" class="hero-cta"><span class="cta-reg-full">Зарегистрироваться бесплатно</span><span class="cta-reg-short">Зарегистрироваться</span></a>
         <a href="#channel-story" class="hero-cta-secondary">Подробнее про реалити</a>
       </div>
     </div>
