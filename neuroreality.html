@@ -482,27 +482,6 @@
       color: var(--orange);
     }
 
-    .hero-type-wrap {
-      display: inline;
-    }
-
-    .hero-type-text {
-      color: var(--brown);
-    }
-
-    .hero-type-cursor {
-      display: inline-block;
-      margin-left: 1px;
-      color: var(--orange);
-      font-weight: 400;
-      animation: cursorBlink 1s step-end infinite;
-    }
-
-    @keyframes cursorBlink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0; }
-    }
-
     .h-u {
 
       position: relative;
@@ -650,71 +629,6 @@
     .hero-cta:hover {
       transform: translateY(-3px) scale(1.03);
       box-shadow: 0 16px 44px rgba(20, 184, 166, 0.48);
-    }
-
-    .hero-cta--watch {
-      background: linear-gradient(165deg, #ff9f1a 0%, #f97316 42%, #ea580c 100%);
-      color: #fff !important;
-      font-family: "Unbounded", sans-serif;
-      font-size: clamp(17px, 4.2vw, 20px);
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      padding: 20px 24px;
-      min-height: 56px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow:
-        0 3px 0 rgba(255, 255, 255, 0.22) inset,
-        0 12px 36px rgba(234, 88, 12, 0.4);
-      border: 2px solid rgba(255, 255, 255, 0.35);
-      -webkit-tap-highlight-color: transparent;
-    }
-
-    .hero-cta--watch:hover {
-      transform: translateY(-3px) scale(1.02);
-      box-shadow:
-        0 3px 0 rgba(255, 255, 255, 0.28) inset,
-        0 16px 44px rgba(234, 88, 12, 0.48);
-    }
-
-    .hero-cta--watch:active {
-      transform: translateY(0) scale(0.99);
-    }
-
-    .exit-intent-actions .hero-cta--watch {
-      width: 100%;
-      min-width: 0;
-    }
-
-    .exit-intent-btn-register {
-      width: 100%;
-      box-sizing: border-box;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 16px 22px;
-      min-height: 52px;
-      font-family: "Unbounded", sans-serif;
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      color: var(--brown);
-      background: var(--warm-white);
-      border: 2px solid var(--brown);
-      border-radius: 100px;
-      cursor: pointer;
-      transition:
-        transform 0.28s var(--motion-ease-out),
-        background 0.28s var(--motion-ease-out),
-        border-color 0.28s var(--motion-ease-out);
-      box-shadow: 0 4px 18px rgba(42, 31, 53, 0.08);
-    }
-
-    .exit-intent-btn-register:hover {
-      background: var(--card-bg);
-      border-color: var(--orange);
-      transform: translateY(-2px);
     }
 
     .cta-arrow {
@@ -1972,64 +1886,6 @@
       transform: scale(1.05);
     }
 
-    .exit-intent-panel {
-      padding-bottom: 44px;
-    }
-
-    .exit-intent-lead {
-      font-size: 16px;
-      color: var(--brown-mid);
-      font-weight: 600;
-      line-height: 1.55;
-      margin: 0 0 8px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .exit-intent-note {
-      font-size: 13px;
-      color: var(--brown-light);
-      font-weight: 600;
-      margin: 0 0 24px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .exit-intent-actions {
-      display: flex;
-      flex-direction: column;
-      align-items: stretch;
-      gap: 12px;
-      max-width: 440px;
-      margin: 0 auto;
-      position: relative;
-      z-index: 1;
-    }
-
-    .exit-intent-actions .hero-cta {
-      width: 100%;
-      text-align: center;
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-
-    .exit-intent-skip {
-      background: transparent;
-      border: none;
-      padding: 12px 8px;
-      font-family: "Raleway", sans-serif;
-      font-size: 14px;
-      font-weight: 600;
-      color: var(--brown-light);
-      cursor: pointer;
-      text-decoration: underline;
-      text-underline-offset: 3px;
-    }
-
-    .exit-intent-skip:hover {
-      color: var(--orange);
-    }
-
     .form-section {
       background: var(--card-bg);
       border-radius: 28px;
@@ -2338,7 +2194,7 @@
         <div class="hero-main-copy">
           <p class="hero-eyebrow">5 шагов заработка на&nbsp;ИИ:</p>
           <h1>
-            <span class="hero-type-wrap"><span class="hero-type-text" id="heroTyper"></span><span class="hero-type-cursor">|</span></span>
+            Как зарабатывать от&nbsp;<span class="h-orange">100&nbsp;000&nbsp;₽</span> на&nbsp;нейросетях в&nbsp;2026?
           </h1>
 
           <p class="hero-sub">
@@ -2574,22 +2430,6 @@
     </div>
   </dialog>
 
-  <dialog id="exit-intent-modal" class="reg-modal" aria-labelledby="exit-intent-title">
-    <div class="reg-modal-panel form-section exit-intent-panel">
-      <button type="button" class="reg-modal-close" data-exit-intent-close aria-label="Закрыть">&times;</button>
-      <h2 id="exit-intent-title">Смотри,&nbsp;как другие уже <span class="h-orange">зарабатывают</span></h2>
-      <p class="exit-intent-lead">
-        Истории реальных людей, которые за&nbsp;10 дней получили первые доходы на&nbsp;ИИ.
-      </p>
-      <p class="exit-intent-note">Закрытый канал с реалити&nbsp;— бесплатно.</p>
-      <div class="exit-intent-actions">
-        <button type="button" class="hero-cta" id="exit-intent-watch">Следить за реалити</button>
-        <button type="button" class="hero-cta" id="exit-intent-register"><span class="cta-reg-full">Зарегистрироваться бесплатно</span><span class="cta-reg-short">Зарегистрироваться</span></button>
-        <button type="button" class="exit-intent-skip" data-exit-intent-close>Закрыть окно</button>
-      </div>
-    </div>
-  </dialog>
-
   <section class="path-strip reveal" id="path-visual" aria-labelledby="path-vis-title">
     <div class="path-vis-inner">
       <p class="eyebrow" style="text-align: center; margin-bottom: 10px">Твой путь</p>
@@ -2788,124 +2628,11 @@
         } catch (err1) {}
       }
 
-      var exitIntentKey = "nr_exit_intent_v2";
-      var exitRegisteredKey = "nr_registered_v1";
-      var exitModal = document.getElementById("exit-intent-modal");
-      var pageShownAt = Date.now();
-      var EXIT_DWELL_MS = 13000;
-
-      function hasRegisteredThisSession() {
-        try {
-          return sessionStorage.getItem(exitRegisteredKey) === "1";
-        } catch (errReg) {
-          return false;
-        }
-      }
-
-      function dwellSatisfied() {
-        return Date.now() - pageShownAt >= EXIT_DWELL_MS;
-      }
-
-      function closeExitIntentModal() {
-        if (exitModal && exitModal.open) exitModal.close();
-      }
-
-      /* Попап: не раньше EXIT_DWELL_MS на сайте, не после регистрации. Показ по таймеру или при «уходе» (мышь / скролл на мобилке). */
-      function tryShowExitIntent(opts) {
-        opts = opts || {};
-        var allowCoarse = opts.allowCoarse;
-        var allowTimer = opts.allowTimer;
-        if (!dwellSatisfied()) return;
-        if (hasRegisteredThisSession()) return;
-        if (!allowCoarse && !allowTimer && !window.matchMedia("(pointer: fine)").matches) return;
-        try {
-          if (sessionStorage.getItem(exitIntentKey)) return;
-        } catch (errSs) {
-          return;
-        }
-        if (regModal && regModal.open) return;
-        if (!exitModal || typeof exitModal.showModal !== "function") return;
-        if (exitModal.open) return;
-        try {
-          sessionStorage.setItem(exitIntentKey, "1");
-        } catch (errSet) {}
-        exitModal.showModal();
-      }
-
-      if (exitModal) {
-        exitModal.querySelectorAll("[data-exit-intent-close]").forEach(function (btn) {
-          btn.addEventListener("click", closeExitIntentModal);
-        });
-        exitModal.addEventListener("click", function (e) {
-          if (e.target === exitModal) closeExitIntentModal();
-        });
-        var exitWatch = document.getElementById("exit-intent-watch");
-        var exitRegister = document.getElementById("exit-intent-register");
-        [exitWatch, exitRegister].forEach(function (btn) {
-          if (!btn) return;
-          btn.addEventListener("click", function () {
-            closeExitIntentModal();
-            openRegModal();
-          });
-        });
-      }
-
-      window.setTimeout(function () {
-        tryShowExitIntent({ allowTimer: true });
-      }, EXIT_DWELL_MS);
-
-      document.documentElement.addEventListener(
-        "mouseleave",
-        function (e) {
-          if (e.clientY > 20) return;
-          tryShowExitIntent();
-        },
-        { passive: true }
-      );
-
-      document.addEventListener(
-        "mouseout",
-        function (e) {
-          if (e.relatedTarget != null) return;
-          if (e.clientY > 24) return;
-          tryShowExitIntent();
-        },
-        true
-      );
-
-      /* Мобилка: нет курсора у края окна — ловим резкий скролл вверх к началу после глубокого чтения (как «назад наверх»). */
-      (function exitIntentMobileScroll() {
-        if (!window.matchMedia("(pointer: coarse)").matches) return;
-        var peak = 0;
-        var lastY = window.scrollY || 0;
-        var lastTs = Date.now();
-        window.addEventListener(
-          "scroll",
-          function () {
-            var y = window.scrollY || 0;
-            var t = Date.now();
-            peak = Math.max(peak, y);
-            var dy = lastY - y;
-            var dt = Math.max(1, t - lastTs);
-            lastY = y;
-            lastTs = t;
-            if (peak < 400) return;
-            if (y > 120) return;
-            if (dy < 90 || dt > 550) return;
-            tryShowExitIntent({ allowCoarse: true });
-          },
-          { passive: true }
-        );
-      })();
-
       var regForm = document.getElementById("regForm");
       if (regForm) {
         regForm.addEventListener("submit", function (e) {
           e.preventDefault();
           if (!this.reportValidity()) return;
-          try {
-            sessionStorage.setItem(exitRegisteredKey, "1");
-          } catch (errRegSet) {}
           this.style.display = "none";
           document.getElementById("formTrust").style.display = "none";
           var ok = document.getElementById("successMsg");
@@ -2913,167 +2640,6 @@
           ok.style.display = "block";
         });
       }
-
-      /* ── Hero typing animation (full sentence, accent highlights) ── */
-      (function () {
-        var el = document.getElementById("heroTyper");
-        if (!el) return;
-        var h1 = el.closest("h1");
-
-        var phrases = [
-          [
-            { t: "Как зарабатывать от\u00A0", a: false },
-            { t: "100\u00A0000\u00A0₽", a: true },
-            { t: " на\u00A0нейросетях в\u00A02026?", a: false }
-          ],
-          [
-            { t: "Как делегировать ", a: false },
-            { t: "80%\u00A0рутины", a: true },
-            { t: " нейросетям в\u00A02026?", a: false }
-          ],
-          [
-            { t: "Как находить ", a: false },
-            { t: "клиентов на\u00A0услуги\u00A0ИИ", a: true },
-            { t: " в\u00A02026?", a: false }
-          ],
-          [
-            { t: "Как создавать ", a: false },
-            { t: "контент за\u00A0минуты", a: true },
-            { t: " с\u00A0ИИ в\u00A02026?", a: false }
-          ]
-        ];
-
-        function isHeroMobileLayout() {
-          return window.matchMedia && window.matchMedia("(max-width: 959px)").matches;
-        }
-
-        /* Полная фраза в DOM как при наборе (спаны .h-orange) — корректная высота и переносы */
-        function renderPhraseComplete(segs) {
-          el.innerHTML = "";
-          for (var pi = 0; pi < segs.length; pi++) {
-            var seg = segs[pi];
-            if (seg.a) {
-              var span = document.createElement("span");
-              span.className = "h-orange";
-              span.textContent = seg.t;
-              el.appendChild(span);
-            } else {
-              el.appendChild(document.createTextNode(seg.t));
-            }
-          }
-        }
-
-        /* Measure max height across all phrases and lock h1 */
-        function lockHeight() {
-          var maxH = 0;
-          var cursor = el.parentNode.querySelector(".hero-type-cursor");
-          if (cursor) cursor.style.display = "none";
-          var savedHTML = el.innerHTML;
-          for (var i = 0; i < phrases.length; i++) {
-            renderPhraseComplete(phrases[i]);
-            var h = h1.scrollHeight;
-            if (h > maxH) maxH = h;
-          }
-          el.innerHTML = savedHTML;
-          if (cursor) cursor.style.display = "";
-          var mobile = isHeroMobileLayout();
-          if (mobile) {
-            /* На мобилке фикс. height + overflow:hidden обрезали текст при reflow (шрифт, URL-бар) */
-            h1.style.height = "auto";
-            h1.style.minHeight = maxH + "px";
-            h1.style.overflow = "visible";
-          } else {
-            h1.style.minHeight = "";
-            h1.style.height = maxH + "px";
-            h1.style.overflow = "hidden";
-          }
-        }
-        lockHeight();
-        if (document.fonts && document.fonts.ready) {
-          document.fonts.ready.then(function () {
-            h1.style.height = "";
-            h1.style.minHeight = "";
-            lockHeight();
-          });
-        }
-        var resizeLockTimer;
-        window.addEventListener("resize", function () {
-          window.clearTimeout(resizeLockTimer);
-          resizeLockTimer = window.setTimeout(function () {
-            h1.style.height = "";
-            h1.style.minHeight = "";
-            lockHeight();
-          }, isHeroMobileLayout() ? 400 : 200);
-        });
-
-        var idx = 0;
-        var charPos = 0;
-        var deleting = false;
-        var TYPING_SPEED = 50;
-        var DELETING_SPEED = 25;
-        var PAUSE_BEFORE_DELETE = 3600;
-        var PAUSE_BEFORE_TYPE = 550;
-
-        function totalLen(segs) {
-          var n = 0;
-          for (var i = 0; i < segs.length; i++) n += segs[i].t.length;
-          return n;
-        }
-
-        function render() {
-          var segs = phrases[idx];
-          el.innerHTML = "";
-          var left = charPos;
-          if (left <= 0) return;
-          for (var i = 0; i < segs.length; i++) {
-            if (left <= 0) break;
-            var seg = segs[i];
-            var chunk = seg.t.slice(0, left);
-            left -= chunk.length;
-            if (seg.a) {
-              var span = document.createElement("span");
-              span.className = "h-orange";
-              span.textContent = chunk;
-              el.appendChild(span);
-            } else {
-              el.appendChild(document.createTextNode(chunk));
-            }
-          }
-        }
-
-        function tick() {
-          var len = totalLen(phrases[idx]);
-
-          if (!deleting) {
-            charPos++;
-            render();
-            if (charPos >= len) {
-              setTimeout(function () {
-                deleting = true;
-                tick();
-              }, PAUSE_BEFORE_DELETE);
-              return;
-            }
-            setTimeout(tick, TYPING_SPEED);
-          } else {
-            charPos--;
-            if (charPos <= 0) {
-              deleting = false;
-              idx = (idx + 1) % phrases.length;
-              charPos = 1;
-              render();
-              setTimeout(tick, PAUSE_BEFORE_TYPE);
-              return;
-            }
-            render();
-            setTimeout(tick, DELETING_SPEED);
-          }
-        }
-
-        charPos = 1;
-        render();
-        setTimeout(tick, TYPING_SPEED);
-      })();
 
     })();
   </script>
